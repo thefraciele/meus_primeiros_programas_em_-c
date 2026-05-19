@@ -2,6 +2,7 @@
 int main () {
     int idade; //aqui eu defino o tipo da minha variavel que é um número inteiro
     float altura;
+    char nome[20];
 
     printf("Digite sua idade:\n"); 
     // aqui não apenas mostramos algo na tela (eu não preciso colocar um especificador de formato aqui porque ele funciona como um placeholder)
@@ -14,7 +15,11 @@ int main () {
 
     printf("digite sua altura:\n");
     scanf("%f", &altura);
-    printf("Sua altura é: %.2f", altura);
+    printf("Sua altura é: %.2f\n", altura);
+
+    printf("Digite apenas seu primeiro nome:\n");
+    scanf("%s", nome);
+    printf("Seu nome é: %s", nome);
 
     return 0;
 }
