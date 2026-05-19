@@ -20,6 +20,7 @@ int main () {
     printf("Digite apenas seu primeiro nome:\n");
     scanf("%s", nome);
     printf("Seu nome é: %s", nome);
+    //a linguagem #C indentifica o espaço como uma finalização assim como enter então dessa forma não da pra fazer um nome composto
 
     return 0;
 }
