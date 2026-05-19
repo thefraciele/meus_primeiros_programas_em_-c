@@ -26,6 +26,7 @@ int main () {
     printf("Digite sua letra favorita:");
     scanf(" %c", &letra);
     printf("Sua letra favorita é:%c\n", letra);
+    //precisa colocar um espaço em branco assim:" %c" para o scanf ignorar a memoria do buffer e conseguir pedir para o usuario digitar a informação.(ao digitar anteriormente as outras caracteristicas e clicar em "enter" o enter também é um caracter e fica sobrando no buffer do programa. o scanf lê esse enter se  não adicionar o espaço como mensionei a cima.
 
 
 
