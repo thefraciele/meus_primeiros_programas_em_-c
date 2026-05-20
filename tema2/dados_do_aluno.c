@@ -3,7 +3,7 @@ int main(){
     //primeiro vou solicitar os dados do aluno:
 
     char nome[20];
-    int idade;
+    int idade, matricula;
     float cpf;
     float numero;
 
@@ -11,7 +11,7 @@ int main(){
     char curso[30];
     char semestre[20];
     char turno[20];
-    float matricula;
+    
 
     //primeira mensagem que aparece ao iniciar o programa
     printf("----------------------------------------------------------\n");
@@ -41,20 +41,19 @@ int main(){
     scanf("%s", turno);
 
     printf("Digite o seu número de matrícula:\n");
-    scanf ("%f", &matricula);
-    //segunda parte das perguntas
+    scanf ("%d", &matricula); //em maticula se usa int e não float
 
     printf("-------------------------------------------------\n");
 
     printf("SUAS INFORMAÇÕES SÃO:\n");
 
     printf("NOME: %s\n", nome);
-    printf("IDADE: %d\n", &idade);
-    printf("CPF: %f\n", &cpf);
-    printf("TELEFONE: %f\n", &numero);
+    printf("IDADE: %d\n", idade);
+    printf("CPF: %f\n", cpf);
+    printf("TELEFONE: %f\n", numero);
 
     printf("CURSO: %s\n", curso);
-    printf("MATRÍCULA: %f\n", &matricula);
+    printf("MATRÍCULA: %d\n", matricula);
     printf("SEMESTRE: %s\n", semestre);
     printf("TURNO: %s\n", turno);
     printf("----------------------------------------------\n");
