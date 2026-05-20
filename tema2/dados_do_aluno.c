@@ -13,8 +13,10 @@ int main(){
     char turno[20];
     float matricula;
 
-    printf("Olá seja bem vindo ao portal do aluno!!! Precisamos de alguns dados para proceguir com seu atendimento!!\n");
     //primeira mensagem que aparece ao iniciar o programa
+    printf("----------------------------------------------------------\n");
+    printf("Olá seja bem vindo ao portal do aluno!!!\n Precisamos de alguns dados para proceguir com seu atendimento!!\n");
+    printf("-----------------------------------------------------------\n");
 
 
     printf("Digite seu primeiro nome:\n");
@@ -29,35 +31,33 @@ int main(){
     scanf("%f", &numero);
     //primeira etapa das perguntas
 
-    printf("Agora umas informações sobre o seu curso.\n");
-    printf("Digite o nome do curso que você está estudando atualmente:\n");
+    printf("Digite o nome do seu curso:\n");
     scanf("%s", curso);
 
-    printf("Em qual semestre você está ?\n");
+    printf("Digite em qual semestre está:\n");
     scanf("%s", semestre);
 
-    printf("Digite seu turno tarde ou noite: \n");
+    printf("Digite em qual turno você faz as aulas:\n");
     scanf("%s", turno);
 
     printf("Digite o seu número de matrícula:\n");
     scanf ("%f", &matricula);
     //segunda parte das perguntas
 
-    printf("SUAS INFORMAÇÕES SÃO:");
+    printf("-------------------------------------------------\n");
 
-    printf("Seu nome é: %s\n", nome);
-    printf("Idade: %d\n", &idade);
+    printf("SUAS INFORMAÇÕES SÃO:\n");
+
+    printf("NOME: %s\n", nome);
+    printf("IDADE: %d\n", &idade);
     printf("CPF: %f\n", &cpf);
-    printf("Número de telefone: %f\n", &numero);
+    printf("TELEFONE: %f\n", &numero);
 
-    printf("---------------------------\n");
-
-    printf("AS INFORMAÇÕES DO SEU CURSO SÃO:\n");
-
-    printf("Seu curso é: %s\n", curso);
-    printf("Matrícula: %f", &matricula);
-    printf("você está no: %s ", semestre);
-    printf("turno: %s", turno);
+    printf("CURSO: %s\n", curso);
+    printf("MATRÍCULA: %f\n", &matricula);
+    printf("SEMESTRE: %s\n", semestre);
+    printf("TURNO: %s\n", turno);
+    printf("----------------------------------------------\n");
 
     return 0;
 
