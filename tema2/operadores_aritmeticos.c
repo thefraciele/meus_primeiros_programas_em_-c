@@ -16,7 +16,7 @@ int main (){
    printf("Entre com o número 2\n");
    scanf("%d", &numero2);
    
-
+    
    //operação soma
    soma = numero1 + numero2;
    //operação subtração
